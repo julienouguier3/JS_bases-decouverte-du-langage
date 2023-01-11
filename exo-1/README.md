@@ -12,7 +12,7 @@ Les exercices de ce projet utilise `var` pour déclarer les variables. Depuis ES
 Nous vous recommandons, si vous êtes à l'aise, d'utiliser `let` et `const` (selon les cas) à la place de `var`. Ces articles vous feront découvrir les différences entre les trois types de variable :
 
 - [Le plus complet, en anglais](https://www.freecodecamp.org/news/var-let-and-const-whats-the-difference/)
-- [Court article, en français](https://putaindecode.io/articles/es6-es2015-la-declaration-de-variables-avec-const-let-et-var/)
+- [Court article, en français](https://putaindecoDid you put a number in your console.log() statement?de.io/articles/es6-es2015-la-declaration-de-variables-avec-const-let-et-var/)
 - [Un autre article en français](https://blog.freelancerepublik.com/tuto-javascript-var-let-const/)
 
 ---
