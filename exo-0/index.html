@@ -1,67 +1,71 @@
-<!DOCTYPE html>
-<html>
-    <head>
-        <meta charset="utf-8">
-    </head>
-    <body>
+<!DOCTYPE html><!--Déclare une page HTML-->
+<html><!--Balise d'ouverture html-->
 
-        <h1>Exercice 0</h1>
+<head><!--Balise d'ouverture du head (métadonnées)-->
+    <meta charset="utf-8"><!--Indique au navigateur d'utiliser le jeu de caractère universel unicode -->
+</head><!--Balise de fermeture du head (métadonnées)-->
 
-        <script type="text/javascript">
+<body><!--Balise d'ouverture corps de la page-->
 
-        /* Section 1 */   
+    <h1>Exercice 0</h1>
 
-        var name = "Joe";
-        var city = 'London';
-        var age = 32;
-        var isRed = true;
-        var isOld = age > 80;
+    <script type="text/javascript">//Déclare l'insertion de code Javascript
 
-        var previousJobs = ['lawyer', 'developper', 'Professionnal climber'];
+        /* Section 1 */
 
-        function info(height, weight) {
-            if (height > 180) {
-                console.log('Vous êtes grand');
+        var name = "Joe";// Déclare une variable nommée name qui prend pour valeur la chaîne de caractère JOE -> guillemets doubles.
+        var city = 'London';//Déclare une variable city a qui prend pour valeur la chaîne de caractère London -> guillemets simples.
+        var age = 32; //Déclare une variable nommée age qui prend pour valeur l'entier 3.2
+        var isRed = true;//Déclare une variable nommée isRed qui prend pour un booléen.
+        var isOld = age > 80;//Déclare une variable isOld qui prend pour valeur un booléen.
+
+        var previousJobs = ['lawyer', 'developper', 'Professionnal climber'];//Déclare une variable nommée PreviousJob qui prend pour valeur un tableau de string.
+
+        function info(height, weight) { //Déclare une fonction nommée info qui prend en paramètre height et weight.
+            if (height > 180) {//Déclare une boucle qui indique que si height est > à 180
+                console.log('Vous êtes grand');//le texte 'Vous êtes grand' sera écrit dans la console.
             }
-            if (weight < 0) {
-                console.log('oups, there is a problem');
-            } else if ( weight < 15) {
-                console.log('Are you that slim ?')
-            } else {
-                console.log('Good !')
+            if (weight < 0) {//Si weight est < 0 
+                console.log('oups, there is a problem');//le texte 'oups, there is a problem' sera écrit dans la console.
+            } else if (weight < 15) {//Sinon si weight < 15
+                console.log('Are you that slim ?')//le texte 'Are you that slim' sera écrit dans la console.
+            } else {//Sinon si aucune des conditions précédentes n'est exécutées
+                console.log('Good !')//le texte 'Good' sera écrit dans la console.
             }
         }
 
-        info(165, 45);
+        info(165, 45);//Fonction info appelé avec les paramètres height et weight ayant pour valeur 165 et 45. 
 
-        var myHeight = 175;
-        var myWeight = 86;
+        var myHeight = 175;//Déclare une variable globale nommée myHeight qui prend pour valeur l'entier 175.
+        var myWeight = 86;//Déclare une variable globale nommée myWeight qui prend pour valeur l'entier 86.
 
-        info(myHeight, myWeight);
+        info(myHeight, myWeight);//La fonction info prend en paramètre les variables globales myHeight et myWeight.
 
-        info(myHeight + 15, myWeight - 100);
+        info(myHeight + 15, myWeight - 100);//La fonction info prend en paramètre la variable globale myHeight + 15  et myWeight -100 .
 
-        function toUpper(variable) {
-            return variable.toUpperCase();
+
+        function toUpper(variable) {//Déclare une fonction nommée toUpper.
+            return variable.toUpperCase();//Retourne le paramètre variable en majuscule
         }
 
-        var upperName = toUpper(name);
+        var upperName = toUpper(name);//Déclare une variable nommée upperName qui prend pour valeur la fonction toUpper.
 
-        for (i = 0; i < 3; i = i + 1) {
-            console.log(previousJobs[i]);
+        for (i = 0; i < 3; i = i + 1) {//Boucle init à 0; i < 3; incrémente de +1 à chaque tour
+            console.log(previousJobs[i]);//Affiche dans la console la variable previousJobs en passant sur chaque valeur stockée.
         }
 
         /* Section 2: */
 
-        // afficher la ville dans laquele Joe vit.     
-
+        // afficher la ville dans laquelle Joe vit.
+        console.log(city);
         // afficher si Joe est roux ou pas.
-
+        console.log(isRed);
         /* Section 3 */
+        var myVariable = 'coucou';
+         console.log(myVariable);
 
-        // console.log(myVariable);
+    </script><!--Déclare la fin d'insertion de code Javascript-->
 
-        </script>
+</body><!--Balise d'ouverture corps de la page-->
 
-    </body>
-</html>
+</html><!--Balise de fermeture de la page-->
