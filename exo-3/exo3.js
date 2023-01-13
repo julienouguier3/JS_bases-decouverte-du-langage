@@ -52,16 +52,16 @@ function findWinner(playerChoice, computerChoice) {
 }
 
 //Annoncer le gagnant
-/* function playGame() {
-    let uChoice = getPlayerChoice("rock");
-    //console.log(uChoice);
-    //let computerChoice = getComputerChoice();
-    // console.log(computerChoice);
-    console.log(findWinner(uChoice, computerChoice));
-  }
-  playGame(); */
+function playGame() {
+  let uChoice = getPlayerChoice(playerInput);
+  //console.log(uChoice);
+  let computerChoice = getComputerChoice();
+  // console.log(computerChoice);
+  console.log(findWinner(uChoice, computerChoice));
+}
+playGame();
 
 //Appels fonctions
-getPlayerChoice(playerInput); //Appel la fonction
+//getPlayerChoice(playerInput); //Appel la fonction
 //getComputerChoice();
-console.log(findWinner(playerInput, getComputerChoice()));
+//console.log(findWinner(playerInput, getComputerChoice()));
