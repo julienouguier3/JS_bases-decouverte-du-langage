@@ -11,9 +11,9 @@ function getPlayerChoice(playerInput) {
     playerInput === "paper" ||
     playerInput === "scissors"
   ) {
-    console.log(playerInput);
+    return playerInput;
   } else {
-    console.log(`erreur de frappe`);
+    console.error(`erreur de frappe`);
   }
 }
 
@@ -54,10 +54,10 @@ function findWinner(playerChoice, computerChoice) {
 //Annoncer le gagnant
 function playGame() {
   let uChoice = getPlayerChoice(playerInput);
-  //console.log(uChoice);
+  console.log(uChoice);
   let computerChoice = getComputerChoice();
   // console.log(computerChoice);
-  console.log(findWinner(uChoice, computerChoice));
+  findWinner(uChoice, computerChoice);
 }
 playGame();
 
