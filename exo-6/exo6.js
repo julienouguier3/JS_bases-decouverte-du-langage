@@ -66,7 +66,7 @@ for (i = 0; i < 5; i++) {
   team.addGames("Guerin", tp, op);
   team.addPlayer("Julia", "torres", 12);
 }
-//Somme teamPoints
+//Somme teamPoints.
 
 const total = () => {
   let start = 0;
@@ -75,28 +75,53 @@ const total = () => {
   });
   return start;
 };
-
+//Somme opponent,
 const totalOpp = () => {
   let compt = 0;
   team.games.forEach((element) => {
-   compt += element.opponentPoints;
-    
+    compt += element.opponentPoints;
   });
   return compt;
 };
+//Puis moyenne opponent.
+let moyenne = Math.floor(totalOpp() / team.games.length);
+console.log("Moyenne opponents : " + moyenne);
+console.log("Nombre de match : " + team.games.length);
 
-let moyenne = totalOpp() / team.games.length;
-console.log(moyenne);
-console.log(team.games.length);
+//Joueur le plus âgé
+function findOldestPlayer() {
+  let count = 0;
+  team.players.forEach((element) => {
+    count == element.age(count > element.age ? Math.max(element.age) : null);
+  });
+
+  // if (element.age > count) {
+  //   count = element.age;
+  // },
+
+  // team.players.forEach((element) => {
+  //   if (element.age === count) {
+  //     players =
+  //       "Le joueur le plus âgé est : " +
+  //       element.firstName +
+  //       " " +
+  //       element.lastName +
+  //       "qui a " +
+  //       element.age;
+  //   }
+  // });
+}
 
 //console
-console.log(team);
+//console.log("aperçu : "+);
+console.log("Joueur le plus âgé : " + findOldestPlayer());
+
 console.log("Score total team : " + total());
 console.log("Score total opponents : " + totalOpp());
 
 /* Fonction dans variable (other way)
-let addPlayer = (firstName, lastName, age) => {
-    
+    let addPlayer = (firstName, lastName, age) => {
+      
     let item = { firstName: firstName, lastName: lastName, age: age };// <propertie:><value>
     team["players"].push(item);
     //console.log(team["players"].push(item));
